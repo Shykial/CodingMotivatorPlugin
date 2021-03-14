@@ -1,7 +1,7 @@
 # Coding Motivator plugin
 
 <!-- Plugin description -->
-##The one and only motivational plugin for hardcore developers!
+## The one and only motivational plugin for hardcore developers!
 ### Boost your productivity immediately!
 <br>
 <br>
