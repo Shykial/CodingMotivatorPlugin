@@ -20,9 +20,9 @@ public class MotivateMeAction extends AnAction {
         Project currentProject = event.getProject();
         String[] motivatingMessages = {"You can do it!", "You're the best!",
                 "It doesn't matter how many times you fall, what does matter is how many times you get up!",
-                "If you think you're unlucky - remember that some people still code in C#",
-                "We know you have no friends, let caffeine be the first one!",
-                "Programming is just like sex, one mistake and you have to support it for the rest of your life!"};
+                "Jetbrains, we're still waiting for HolyC support!",
+                "If you have no friends, let caffeine be the first one!",
+                "Would you like to live with a tick under your skin? Just start debugging"};
 
         String motivationalMessage = (motivatingMessages[(int) (Math.random() * (motivatingMessages.length))]);
         String dlgTitle = event.getPresentation().getDescription();
