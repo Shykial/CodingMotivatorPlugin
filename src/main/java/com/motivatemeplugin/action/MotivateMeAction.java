@@ -2,10 +2,8 @@ package com.motivatemeplugin.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
-import com.intellij.pom.Navigatable;
 import org.jetbrains.annotations.NotNull;
 
 public class MotivateMeAction extends AnAction {
@@ -26,11 +24,9 @@ public class MotivateMeAction extends AnAction {
                 "We know you have no friends, let caffeine be the first one!",
                 "Programming is just like sex, one mistake and you have to support it for the rest of your life!"};
 
-        StringBuffer dlgMsg = new StringBuffer(motivatingMessages[(int) (Math.random() * (motivatingMessages.length))]);
+        String motivationalMessage = (motivatingMessages[(int) (Math.random() * (motivatingMessages.length))]);
         String dlgTitle = event.getPresentation().getDescription();
-        // If an element is selected in the editor, add info about it.
-        Navigatable nav = event.getData(CommonDataKeys.NAVIGATABLE);
 
-        Messages.showMessageDialog(currentProject, dlgMsg.toString(), dlgTitle, Messages.getInformationIcon());
+        Messages.showMessageDialog(currentProject, motivationalMessage, dlgTitle, Messages.getInformationIcon());
     }
 }
