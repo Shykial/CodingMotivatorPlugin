@@ -1,4 +1,4 @@
-package com.github.skykial.intellijplugintest.action;
+package com.motivatemeplugin.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;

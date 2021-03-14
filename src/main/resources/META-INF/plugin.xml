@@ -6,8 +6,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <action id="com.github.skykial.intellijplugintest.action.MotivateMeAction"
-                class="com.github.skykial.intellijplugintest.action.MotivateMeAction" text="Motivate Me"
+        <action id="com.motivatemeplugin.action.MotivateMeAction"
+                class="com.motivatemeplugin.action.MotivateMeAction" text="Motivate Me"
                 description="Coding motivator">
             <add-to-group group-id="EditorTabsGroup" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt M"/>
