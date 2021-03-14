@@ -3,19 +3,8 @@
     <name>Coding motivator</name>
     <vendor>shykial</vendor>
 
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.shykial.intellijplugintest.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.shykial.intellijplugintest.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.shykial.intellijplugintest.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
     <actions>
         <action id="com.github.skykial.intellijplugintest.action.MotivateMeAction"
                 class="com.github.skykial.intellijplugintest.action.MotivateMeAction" text="Motivate Me"

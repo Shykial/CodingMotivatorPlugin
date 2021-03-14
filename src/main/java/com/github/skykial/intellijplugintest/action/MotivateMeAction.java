@@ -23,7 +23,7 @@ public class MotivateMeAction extends AnAction {
         String[] motivatingMessages = {"You can do it!", "You're the best!",
                 "It doesn't matter how many times you fall, what does matter is how many times you get up!",
                 "If you think you're unlucky - remember that some people still code in C#",
-                "Go grab some coffee, we know you have no friends, let caffeine be the first one!",
+                "We know you have no friends, let caffeine be the first one!",
                 "Programming is just like sex, one mistake and you have to support it for the rest of your life!"};
 
         StringBuffer dlgMsg = new StringBuffer(motivatingMessages[(int) (Math.random() * (motivatingMessages.length))]);
