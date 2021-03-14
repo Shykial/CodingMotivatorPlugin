@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.github.shykial.intellijplugintest</id>
-    <name>IntellijPluginTest</name>
+    <name>Coding motivator</name>
     <vendor>shykial</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -16,4 +16,12 @@
         <listener class="com.github.shykial.intellijplugintest.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.skykial.intellijplugintest.action.MotivateMeAction"
+                class="com.github.skykial.intellijplugintest.action.MotivateMeAction" text="Motivate Me"
+                description="Coding motivator">
+            <add-to-group group-id="EditorTabsGroup" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt M"/>
+        </action>
+    </actions>
 </idea-plugin>
